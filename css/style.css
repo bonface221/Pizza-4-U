@@ -37,16 +37,17 @@ section {
 }
 .btn {
     display: inline-block;
-    padding: .8rem 3rem;
+    padding: .3rem 0.6rem;
     border: .2rem solid var(--red);
     color: var(--red);
     cursor: pointer;
-    font-size: 1.7rem;
-    border-radius: .5rem;
+    font-size: 1.5rem;
+    border-radius: 0.7rem;
     position: relative;
     overflow: hidden;
     z-index: 0;
     margin-top: 1rem;
+    
 }
 
 .btn::before {
@@ -54,21 +55,27 @@ section {
     position: absolute;
     top: 0;
     right: 0;
+    left: 0;
     width: 0%;
     height: 100%;
     background: var(--red);
-    transition: .3s linear;
+    transition: .2s linear;
     z-index: -1;
 }
 
-.btn:hover::before {
+.btn:hover::before{
     width: 100%;
     left: 0;
+    border-start-start-radius: 1.5rem;
+   
 }
 
 .btn:hover {
     color: #fff;
+    
+    
 }
+
 header {
     position: fixed;
     top: 0;
@@ -103,3 +110,52 @@ header .navbar a {
 header .navbar a:hover {
     color: var(--red);
 }
+#menu-bar {
+    font-size: 2rem;
+    cursor: pointer;
+    color: #666; 
+    display: none; 
+}
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+    background-image: url(../images/home-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+}
+.home .text{
+    flex:1 1 40rem;
+    
+}
+.home .image{
+    flex: 1 1 40rem;
+}
+.home .image img{
+    width: 100%;
+    padding: 1rem;
+    animation:float 3s linear infinite;
+}
+@keyframes float {
+
+    0%,100% {
+        transform: translateY(0rem);
+    }
+
+    50% {
+        transform: translateY(3rem);
+    }
+}
+.home .text h3{
+    font-size: 5rem;
+    color: #333;
+}
+.home .text p {
+    font-size: 1.5rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
