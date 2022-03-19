@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 
 :root{
-    --red:#ff3838
+    --red:#eb7966
 }
 *{
     font-family: 'Nunito', sans-serif;
@@ -200,6 +200,52 @@ header .navbar a:hover {
 
 .sspecials .box-container .box:hover .content {
     transform: translateY(-100%)
+}
+.popular .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.popular .box-container .box{
+    flex: 1 1 30rem;
+    position: relative;
+    border-radius: .5rem;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border-radius: 0.5rem;
+}
+.popular .box-container  .box img{
+    height: 25rem;
+    object-fit: cover;
+    width: 100%;
+    border-radius: .5rem;
+
+
+}
+.popular .box-container .box .stars i{
+    color:gold;
+    font-size:1.7rem;
+    padding:1rem .1rem;
+}
+.popular .box-container .box .price{
+    position: absolute;
+    top:3rem;
+    left:3rem;
+    background:var(--red);
+    color:#fff;
+    font-size: 2rem;
+    padding:.5rem 1rem;
+    border-radius: .5rem;
+
+}
+.popular .box-container .box h3 {
+    color: #333;
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+.popular .box-container .box .btn{
+    margin-bottom: 1.5rem;
 }
 
 
