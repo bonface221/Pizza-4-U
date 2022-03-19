@@ -16,7 +16,7 @@
     color: #fff;
 }
 html{
-    overflow-y: hidden;
+    overflow-x: hidden;
     scroll-behavior: smooth;
     scroll-padding-top: 6rem;
 }
@@ -37,41 +37,25 @@ section {
 }
 .btn {
     display: inline-block;
-    padding: .3rem 0.6rem;
+    padding: 0.1rem 0.3rem;
     border: .2rem solid var(--red);
     color: var(--red);
     cursor: pointer;
     font-size: 1.5rem;
-    border-radius: 0.7rem;
-    position: relative;
-    overflow: hidden;
-    z-index: 0;
+    border-radius: 0.6rem;
+    box-shadow: inset 0 0 0 0.09px var(--red);
+    -webkit-transition: box-shadow linear 0.3s,
+    color linear 0.3s;
+    -moz-transition: box-shadow linear 0.3s,
+    color linear 0.3s;
+    transition: box-shadow linear 0.3s,
+    color linear 0.3s;
     margin-top: 1rem;
-    
-}
-
-.btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    width: 0%;
-    height: 100%;
-    background: var(--red);
-    transition: .2s linear;
-    z-index: -1;
-}
-
-.btn:hover::before{
-    width: 100%;
-    left: 0;
-    border-start-start-radius: 1.5rem;
-   
 }
 
 .btn:hover {
     color: #fff;
+    box-shadow: inset 400px 50px 0 0 var(--red);
     
     
 }
@@ -158,4 +142,64 @@ header .navbar a:hover {
     color: #666;
     padding: 1rem 0;
 }
+.home .text h3 span{
+    color: var(--red);
+}
+.specials .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.specials .box-container .box {
+    flex: 1 1 30rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border: .1rem solid rgba(0, 0, 0, .3);
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+.specials .box-container .box .image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 100%;
+
+}
+
+.specials .box-container .box .content {
+    text-align: center;
+    background: #fff;
+    padding: 2 rem;
+
+
+}
+
+.specials .box-container .box .content img {
+    margin: 1.5rem 0;
+}
+
+.specials .box-container .box .content h3 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.specials .box-container .box .content p {
+    font-size: 1.4rem;
+    color: #666;
+    padding: 1rem .5rem;
+
+}
+
+.specials .box-container .box:hover .image {
+    top: 0;
+}
+
+.sspecials .box-container .box:hover .content {
+    transform: translateY(-100%)
+}
+
 
