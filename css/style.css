@@ -260,12 +260,13 @@ header .navbar a:hover {
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .3);
     border-radius: 0.5rem;
     padding: 2rem;
+    
 }
 .reviews .box-container .box img{
     height: 25rem;
     width: 100%;
     object-fit: cover;
-    width: 100%;
+    max-width: 25rem;
     border-radius: 50%; 
     
 }
@@ -295,6 +296,9 @@ header .navbar a:hover {
     margin: 0em 5%;
    
 } */
+.order{
+    margin-bottom: 3rem;
+}
 .order .box-container{
     padding:2rem;
     box-shadow: 0rem .5rem 1rem rgba(0, 0, 0, .3);
@@ -303,8 +307,8 @@ header .navbar a:hover {
 }
 .order .box-container .row{
     padding:2rem;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
-    background:#fff;
+    /* box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1); */
+    background:rgb(253, 249, 249);
     display: flex;
     flex-wrap: wrap;
     gap:1.5rem;
@@ -318,8 +322,14 @@ header .navbar a:hover {
     font-size: 1.8rem;
     color: #333;
 }
+
 .order .box-container .row .box{
     flex: 1 1 40rem;
+    border-radius: .5rem;
+    background-color: rgb(253, 251, 252);
+    text-align: center;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+    padding: 2rem;
 }
 
 .order .box-container h3 span{
@@ -330,7 +340,7 @@ header .navbar a:hover {
 }
 .order .box-container .row .box-right .information{
     color: #666;
-    display: none;
+    
 }
 .order .box-container .row .box-right .information h4 {
     color: var(--red);
@@ -338,6 +348,7 @@ header .navbar a:hover {
 .order .box-container .row .box-left select{
     padding: 0 0.1rem;
     font-size: 1.2rem;
+    width: 70%;
 }
 .order .box-container .row .box-right .order-summary .pizzatable th{
     width:20rem;
@@ -350,6 +361,9 @@ header .navbar a:hover {
     font-size: 1.2rem;
     background-color: transparent;
 }
+.order .box-container .row .box-right .delivery{
+    display: none;
+}
 .order .box-container .row .box-right .delivery input{
     padding: .5rem;
     margin: 1rem 0;
@@ -357,6 +371,65 @@ header .navbar a:hover {
     color: #333;
     border: .1rem solid rgba(0,0,0,.3);
     border-radius: .5rem;
-    width: 70%;
+    width: 100%;
 }
+.footer {
+    background: rgb(253, 249, 249);
+    text-align: center;
+    box-shadow: 0rem .5rem 1rem rgba(0, 0, 0, .7);
+    padding: 0.5rem 0rem;
+    
+    
+}
+
+.footer .socialMedia {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer .owner {
+    color: #333;
+    font-weight: normal;
+    font-size: 1.4rem;
+    padding-top: 0.5rem;
+}
+
+.footer .owner span {
+    color: var(--red);
+}
+
+@media(max-width:768px) {
+
+    #menu-bar {
+        display: initial;
+    }
+
+    header .navbar{
+        display: none;
+    }
+    .home {
+        margin-top: 3rem;
+    }
+
+}
+
+@media(max-width:450px) {
+
+    html {
+        font-size: 50%;
+    }
+    .order .box-container .row .box-right .delivery input {
+    
+        width: 100%;
+    }
+    .order .box-container .row .box-left select {
+        padding: 0 0.1rem;
+        font-size: 1.2rem;
+        width: 100%;
+    }
+
+}
+
 
