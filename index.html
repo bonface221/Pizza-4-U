@@ -91,7 +91,7 @@
                     <img src="./images/pizza-icon.png" alt="">
                     <h3>Sicilian Pizza.</h3>
                     <p>
-                        Sicilian Pizza. which is yummy and sweet<br><br>
+                        Sicilian Pizza. which is yummy and <br> sweet<br><br>
                     </p>
                     
                 </div>
@@ -102,7 +102,7 @@
                     <img src="./images/pizza-icon.png" alt="">
                     <h3>California Pizza.</h3>
                     <p>
-                        California Pizza which is yummy and sweet<br><br>
+                        California Pizza which is yummy and <br> sweet<br><br>
                     </p>
                     
                 </div>
@@ -241,9 +241,107 @@
         </div>
     </section>
     <!-- Reviews section ends -->
-    <section class="orders">
+    <section class="order" id="order">
+        <h3 class="heading">Order <span>now</span></h3>
+        <div class="box-container">
+            <h3>Order your pizza here and we will deliver to the door step<span>!</span></h3>
+            <div class="row">
+                <div class="box-left box">
+                    <form action="#">
+                        <label for="flavor">Select your flavor</label>
+                        <select name="select" class="flavor" id="flavor">
+                            <option value="Detroid pizza">Detroid pizza</option>
+                            <option value="St. lois pizza">St. lois pizza</option>
+                            <option value="Mozarrela pizza">Mozarella pizza</option>
+                            <option value="Pizzaria pasta">Pizzaria pasta</option>
+                            <option value="Pizza ham">Pizza ham</option>
+                            <option value="New York-style">New York-style</option>
+                            <option value="California Pizza">California pizza</option>
+                        </select><br><br>
+                        <label for="size">Select size</label>
+                        <select name="select" class="size" id="size">
+                            <option selected="" value="0">Select size here</option>
+                            <option value="large">Large -- sh. 1200</option>
+                            <option value="medium">Medium -- sh. 850</option>
+                            <option value="small">Small -- sh. 600</option>
+                        </select><br><br>
+                        <label for="crust">Choose your favorite crust</label>
+                        <select class="crust" id="crust">
+                            <option selected="" value="0">Select your preferred crust!</option>
+                            <option value="Crispy">Crispy -- sh. 200</option>
+                            <option value="Stuffed">Stuffed -- sh. 150</option>
+                            <option value="Gluten-free">Gluten-free-- sh. 180</option>
+                        </select><br><br>
+                        <p>Choose your Topping at sh.50 each</p>
+                        <label for="sausage"> Sausage</label>
+                        <input type="radio" name="topping" id="sausage">
+                        <label for="bacon"> Bacon</label>
+                        <input type="radio" name="topping" id="bacon">
+                        <label for="onion">Onion</label>
+                        <input type="radio" name="topping" id="onion">
+                    </form>
+                    <button class="btn" id="proceed">proceed</button>
+                    
+
+                </div>
+                <div class="box-right box">
+                    <form action="#">
+                        <div class="information">
+                            <p>Your order will be processed and <br>delivered within one hour of placing.</p><br>
+                            <p>Pay is on order delivery have the money <br> prior to carrier arrival</p><br>
+                            <p>Incase of anything reach out to us <br>before even giving us a bad rating</p><br>
+
+                            <h4>Regards, Management</h4>
+                        </div>
+                        <div class="order-summary">
+                            <h3>Your Order is:</h3>
+                            <table class="pizzatable">
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Size</th>
+                                    <th>Crust</th>
+                                    <th>Topping</th>
+                                    <th>Total</th>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+
+                            </table>
+                            <p id="pizzatotal"></p>
+                            <p id="totalbill"></p>
+                            <p id="addedprice">Delivery will cost sh.150</p>
+                            <p id="final message"></p>
+                            <button class="btn" id="add-pizza">Add pizza</button>
+                            <button  class="btn" id="checkout">checkout</button >
+                            <button  class="btn" id="homeDelivery">Home delivery?</button >
+
+                            
+                        </div>
+                        <div class="delivery">
+                            <h3>Delivery address</h3>
+                            <form action="#">
+                                <input type="text" id="name" placeholder="Name"><br>
+                                <input type="number" placeholder="Phone number" id="number"><br>
+                                <input type="text"  id="location" placeholder="Delivery location"><br>
+                            </form>
+                            <button  class="btn" id="placeOrder">Place order</button >
+
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
 
     </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 
     <script src="./js/script.js"></script>
