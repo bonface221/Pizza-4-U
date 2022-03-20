@@ -11,7 +11,7 @@
 <body>
     <!-- header section starts -->
     <header>
-        <a href="#" class="logo"><i class="fas fa-utensils"></i>Pizza</a>
+        <a href="#home" class="logo"><i class="fas fa-utensils"></i>Pizza</a>
         <div id="menu-bar" class="fas fa-bars"></div>
         <nav class="navbar">
             <a href="#home">home</a>
@@ -29,7 +29,7 @@
             <h3>Pizza done <span>right</span></h3>
             <p>We allow our user to customize their pizza to their <br> taste and delicious thought, in order to choose one <br> of them and
             order it in just a few minutes.</p>
-            <a href="#" class="btn">order now</a>
+            <a href="#order" class="btn">order now</a>
 
         </div>
         <div class="image">
@@ -126,7 +126,7 @@
                     <i class="fas fa-star"></i>
                     <i class="far fa-star"></i>
                 </div>
-                <a href="#" class="btn">order now</a>
+                <a href="#order" class="btn">order now</a>
             </div>
             <div class="box">
                 <span class="price">$5 - $15</span>
@@ -139,7 +139,7 @@
                     <i class="fas fa-star"></i>
                     <i class="far fa-star"></i>
                 </div>
-                <a href="#" class="btn">order now</a>
+                <a href="#order" class="btn">order now</a>
             </div>
             <div class="box">
                 <span class="price">$5 - $25</span>
@@ -152,7 +152,7 @@
                     <i class="fas fa-star"></i>
                     <i class="far fa-star"></i>
                 </div>
-                <a href="#" class="btn">order now</a>
+                <a href="#order" class="btn">order now</a>
             </div>
             <div class="box">
                 <span class="price">$5 - $10</span>
@@ -165,7 +165,7 @@
                     <i class="fas fa-star"></i>
                     <i class="far fa-star"></i>
                 </div>
-                <a href="#" class="btn">order now</a>
+                <a href="#order" class="btn">order now</a>
             </div>
             <div class="box">
                 <span class="price">$5 - $9</span>
@@ -178,7 +178,7 @@
                     <i class="fas fa-star"></i>
                     <i class="far fa-star"></i>
                 </div>
-                <a href="#" class="btn">order now</a>
+                <a href="#order" class="btn">order now</a>
             </div>
             <div class="box">
                 <span class="price">$5 - $50</span>
@@ -191,7 +191,7 @@
                     <i class="fas fa-star"></i>
                     <i class="far fa-star"></i>
                 </div>
-                <a href="#" class="btn">order now</a>
+                <a href="#order" class="btn">order now</a>
             </div>
         </div>
     </section>
@@ -248,7 +248,7 @@
             <div class="row">
                 <div class="box-left box">
                     <form action="#">
-                        <label for="flavor">Select your flavor</label>
+                        <label for="flavor">Select your flavor</label><br>
                         <select name="select" class="flavor" id="flavor">
                             <option value="Detroid pizza">Detroid pizza</option>
                             <option value="St. lois pizza">St. lois pizza</option>
@@ -258,14 +258,14 @@
                             <option value="New York-style">New York-style</option>
                             <option value="California Pizza">California pizza</option>
                         </select><br><br>
-                        <label for="size">Select size</label>
+                        <label for="size">Select size</label><br>
                         <select name="select" class="size" id="size">
                             <option selected="" value="0">Select size here</option>
                             <option value="large">Large -- sh. 1200</option>
                             <option value="medium">Medium -- sh. 850</option>
                             <option value="small">Small -- sh. 600</option>
                         </select><br><br>
-                        <label for="crust">Choose your favorite crust</label>
+                        <label for="crust">Choose your favorite crust</label><br>
                         <select class="crust" id="crust">
                             <option selected="" value="0">Select your preferred crust!</option>
                             <option value="Crispy">Crispy -- sh. 200</option>
@@ -274,11 +274,11 @@
                         </select><br><br>
                         <p>Choose your Topping at sh.50 each</p>
                         <label for="sausage"> Sausage</label>
-                        <input type="radio" name="topping" id="sausage">
+                        <input type="radio" name="topping" value="sausage" id="sausage">
                         <label for="bacon"> Bacon</label>
-                        <input type="radio" name="topping" id="bacon">
+                        <input type="radio" name="topping" value="bacon" id="bacon">
                         <label for="onion">Onion</label>
-                        <input type="radio" name="topping" id="onion">
+                        <input type="radio" name="topping" value="onion" id="onion">
                     </form>
                     <button class="btn" id="proceed">proceed</button>
                     
@@ -286,43 +286,47 @@
                 </div>
                 <div class="box-right box">
                     <form action="#">
-                        <div class="information">
+                        <div class="information" id="information">
                             <p>Your order will be processed and <br>delivered within one hour of placing.</p><br>
                             <p>Pay is on order delivery have the money <br> prior to carrier arrival</p><br>
                             <p>Incase of anything reach out to us <br>before even giving us a bad rating</p><br>
 
                             <h4>Regards, Management</h4>
                         </div>
-                        <div class="order-summary">
+                        <div class="order-summary" id="order-summary">
                             <h3>Your Order is:</h3>
                             <table class="pizzatable">
-                                <tr>
+                                <thead>
+                                   <tr>
                                     <th>Name</th>
                                     <th>Size</th>
                                     <th>Crust</th>
                                     <th>Topping</th>
                                     <th>Total</th>
+                                </tr> 
+                                </thead>
+                                <tbody id="ordersmade">
+                                    <tr>
+                                    <td id="pizzaname"></td>
+                                    <td id="pizzasize"></td>
+                                    <td id="pizzacrust"></td>
+                                    <td id="pizzatopping"></td>
+                                    <td id="totals"></td>
                                 </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-
-                            </table>
+                                </tbody>
+                                
+                            </table><br>
                             <p id="pizzatotal"></p>
                             <p id="totalbill"></p>
                             <p id="addedprice">Delivery will cost sh.150</p>
-                            <p id="final message"></p>
+                            <p id="finalmessage"></p>
                             <button class="btn" id="add-pizza">Add pizza</button>
                             <button  class="btn" id="checkout">checkout</button >
                             <button  class="btn" id="homeDelivery">Home delivery?</button >
 
                             
                         </div>
-                        <div class="delivery">
+                        <div class="delivery" id="delivery">
                             <h3>Delivery address</h3>
                             <form action="#">
                                 <input type="text" id="name" placeholder="Name"><br>
@@ -340,6 +344,22 @@
 
 
     </section>
+    <!-- order section ends -->
+    <!-- footer section starts -->
+    <section class="footer">
+        <div class="socialMedia">
+            <a href="https://www.facebook.com/bonface.maina.186"target="_blank" class="btn">facebook</a>
+            <a href="https://twitter.com/twinbro10" target="_blank"class="btn">twitter</a>
+            <a href="https://github.com/bonface221" target="_blank" class="btn">gitHub</a>
+            <a href="#" class="btn">pinterest</a>
+            <a href="#" class="btn">linkedin</a>
+        </div>
+
+        <h1 class="owner"> created by <span> bonface221 </span> | all rights reserved! </h1>
+
+
+    </section>
+    <!-- footer section ends -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
