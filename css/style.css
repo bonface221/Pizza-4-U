@@ -69,7 +69,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #fff;
+    background: rgb(253, 249, 249);
     padding: 0.5rem 6%;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 }
@@ -172,7 +172,7 @@ header .navbar a:hover {
 
 .specials .box-container .box .content {
     text-align: center;
-    background: #fff;
+    background: rgb(253, 249, 249);
     padding: 2 rem;
 
 
@@ -210,7 +210,7 @@ header .navbar a:hover {
     flex: 1 1 30rem;
     position: relative;
     border-radius: .5rem;
-    background-color: #fff;
+    background-color: rgb(253, 249, 249);
     text-align: center;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
     border-radius: 0.5rem;
@@ -285,6 +285,78 @@ header .navbar a:hover {
     padding-top: 1rem;
     
 }
+/* .order{
+    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)),
+    url(../images/order.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    margin: 0em 5%;
+   
+} */
+.order .box-container{
+    padding:2rem;
+    box-shadow: 0rem .5rem 1rem rgba(0, 0, 0, .3);
+    background-color:rgb(253, 249, 249);
+    border-radius: .5rem;
+}
+.order .box-container .row{
+    padding:2rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    background:#fff;
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    
+}
 
+.order .box-container h3{
+    text-align: center;
+    font-size: 1.8rem;
+    color: #333;
+}
+.order .box-container .row .box{
+    flex: 1 1 40rem;
+}
 
+.order .box-container h3 span{
+    color: var(--red);
+}
+.order .box-container .row .box-right .order-summary{
+    display: none;
+}
+.order .box-container .row .box-right .information{
+    color: #666;
+    display: none;
+}
+.order .box-container .row .box-right .information h4 {
+    color: var(--red);
+}
+.order .box-container .row .box-left select{
+    padding: 0 0.1rem;
+    font-size: 1.2rem;
+}
+.order .box-container .row .box-right .order-summary .pizzatable th{
+    width:20rem;
+    text-align:left;
+}
+.order .box-container .row .box-right .order-summary .pizzatable td{
+    text-align: left;
+}
+.order .box-container .row .btn{
+    font-size: 1.2rem;
+    background-color: transparent;
+}
+.order .box-container .row .box-right .delivery input{
+    padding: .5rem;
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    color: #333;
+    border: .1rem solid rgba(0,0,0,.3);
+    border-radius: .5rem;
+    width: 70%;
+}
 
