@@ -1,4 +1,9 @@
 # Pizza-4-U
+## Description
+A Pizza web application where customers order different sizes of pizzas with one or more toppings. .
+
+![image](./images/pizzalanding%20-page.png)
+
 ## Table of contents
 <ul>
     <li>Description</li>
@@ -10,11 +15,6 @@
     <li>Authors information</li>
     
 </ul>
-
-## Description
-A Pizza web application where customers order different sizes of pizzas with one or more toppings. .
-
-![image](./images/pizzalanding%20-page.png)
 
 ## Installation requirements
 You don't need to install anything you only need internet connection
