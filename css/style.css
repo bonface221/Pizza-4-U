@@ -457,8 +457,13 @@ header .navbar a:hover {
     .home .text h3 {
         font-size: 5rem;
     }
+    .home .text{
+        padding-top: 5.5rem;
+    }
     
-    
+    .home .image{
+        padding-left: 3rem;
+    }
     .home .text p{
         font-size: 1.7rem;
     }
